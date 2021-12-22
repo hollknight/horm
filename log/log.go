@@ -6,6 +6,8 @@ import (
 	"os"
 )
 
+var Logger = NewLogger()
+
 // NewLogger 初始化 logger
 func NewLogger() *zap.Logger {
 	encoder := getEncoder()
